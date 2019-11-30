@@ -4,37 +4,66 @@
       app
       color="primary"
       dark
+      flat
     >
-      <div class="d-flex align-center">
-        <v-img
-          alt="Vuetify Logo"
-          class="shrink mr-2"
-          contain
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
-          transition="scale-transition"
-          width="40"
-        />
+      <v-btn
+        href="/reg"
+        text
+      >
+        <v-icon left size="23">mdi-account-badge-horizontal-outline</v-icon>
+        <span class="mr-2">Дневник</span>
+      </v-btn>
 
-        <v-img
-          alt="Vuetify Name"
-          class="shrink mt-1 hidden-sm-and-down"
-          contain
-          min-width="100"
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
-          width="100"
-        />
-      </div>
+      <v-btn
+        href="/reg"
+        text
+      >
+        <v-icon left size="23">mdi-briefcase-outline</v-icon>
+        <span class="mr-2">Дела</span>
+      </v-btn>
+
+      <v-btn
+        href="/reg"
+        text
+      >
+        <v-icon left size="23">mdi-bullseye-arrow</v-icon>
+        <span class="mr-2">Цели</span>
+      </v-btn>
+
+      <v-btn
+        href="/reg"
+        text
+      >
+        <v-icon left size="23">mdi-finance</v-icon>
+        <span class="mr-2">Финансы</span>
+      </v-btn>
 
       <v-spacer></v-spacer>
 
       <v-btn
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
+        href="/reg"
         text
       >
-        <span class="mr-2">Latest Release</span>
-        <v-icon>mdi-open-in-new</v-icon>
+        <v-icon left size="23">mdi-account</v-icon>
+        <span class="mr-2">Профиль</span>
       </v-btn>
+
+      <v-btn
+        href="/sign"
+        text
+      >
+        <v-icon left size="23">mdi-login-variant</v-icon>
+        <span class="mr-2">Вход / Регистрация</span>
+      </v-btn>
+
+      <v-btn
+        href="/reg"
+        text
+      >
+        <v-icon left size="23">mdi-logout-variant</v-icon>
+        <span class="mr-2">Выход</span>
+      </v-btn>
+
     </v-app-bar>
 
     <v-content>
