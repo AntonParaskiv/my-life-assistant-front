@@ -23,6 +23,7 @@
 
       <v-btn
           color="primary"
+          @click="onSubmit"
           :disabled="!valid"
       >Войти</v-btn>
 
@@ -48,6 +49,21 @@ export default {
             ]
         }
     },
-
+    methods: {
+        onSubmit() {
+            if (this.$refs.form.validate()) {
+                let user = {
+                    email: this.email,
+                    password: this.password
+                }
+                this.$store.dispatch('signIn', user)
+                    .then(() => {
+                        this.$router.push('/')
+                    })
+                    .catch(() => {
+                    })
+            }
+        }
+    },
 };
 </script>
